@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
-
+    <script>
+        $(function () {
+            $.ajax({
+                url: "../../7.31/api/test.php",
+                dataType: "json",
+                success: function (response) {
+                    console.log(response[0].imgUrl2.split(","));
+                }
+            });
+        })
+    </script>
 </body>
 
 </html>
