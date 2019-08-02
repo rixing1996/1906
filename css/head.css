@@ -1,0 +1,465 @@
+/* 顶部 */
+.myOwn {
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid rgb(227, 227, 227);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(244, 244, 244));
+}
+
+.myOwn .myOwn_c {
+    width: 1200px;
+    height: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 左边的登陆注册区域 */
+.myOwn .myOwn_c>div {
+    width: 500px;
+    height: 100%;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgb(102, 102, 102);
+}
+
+.myOwn .myOwn_c>div.fl>span>a {
+    display: inline-block;
+    color: rgb(102, 102, 102);
+    margin-right: 4px;
+}
+
+.myOwn .myOwn_c>div.fl>span>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.myOwn .myOwn_c>div.fl>span {
+    color: red;
+}
+
+.myOwn .myOwn_c>div.fl>span>button {
+    color: blue;
+    margin-left: 8px;
+    height: 12px;
+    cursor: pointer;
+}
+
+/* 右边的帮助区域 */
+.myOwn .myOwn_c>div.fr .phone {
+    padding-left: 30px;
+    height: 100%;
+    color: rgb(0, 120, 223);
+    font-style: italic;
+    font-size: 20px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.myOwn .myOwn_c>div.fr .phone>span {
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+    top: 9px;
+    left: 7px;
+    background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat -269px -30px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.myOwn .myOwn_c>div.fr .help {
+    height: 100%;
+    margin-right: 5px;
+    color: rgb(242, 231, 231);
+}
+
+.myOwn .myOwn_c>div.fr .help>a {
+    display: inline-block;
+    height: 15px;
+    margin: 0 10px;
+    color: rgb(102, 102, 102);
+    line-height: 15px;
+}
+
+.myOwn .myOwn_c>div.fr .account {
+    height: 100%;
+    width: 79px;
+    margin-right: 4px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.myOwn .myOwn_c>div.fr .account:hover {
+    border-left: 1px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220);
+    padding: 0 9px;
+    background: white;
+}
+
+.myOwn .myOwn_c>div.fr .account:hover>ul {
+    display: block;
+}
+
+.myOwn .myOwn_c>div.fr .account>ul {
+    display: none;
+    width: 79px;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    background: white;
+    border-left: 1px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    z-index: 5;
+}
+
+.myOwn .myOwn_c>div.fr .account>ul>li {
+    cursor: pointer;
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 9px;
+    margin: 2px 0;
+}
+
+.myOwn .myOwn_c>div.fr .account>ul>li:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* logo区域 */
+.logo {
+    width: 100%;
+    height: 90px;
+    background: white;
+}
+
+.logo .logo_c {
+    width: 1200px;
+    min-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo .logo_c .logo_img {
+    width: 320px;
+    padding: 15px 0 0 35px;
+    height: 100%;
+}
+
+.logo .logo_c .logo_img>a {
+    display: block;
+    background: red;
+    width: 150px;
+}
+
+/* 输入框区域 */
+.logo .logo_c .logo_in {
+    height: 100%;
+    width: 428px;
+    padding-top: 27px;
+    position: relative;
+}
+
+.logo .logo_c .logo_in>input {
+    width: 100%;
+    height: 34px;
+    border: 2px solid rgb(2, 163, 240);
+    padding: 0 74px 0 10px;
+    color: rgb(102, 102, 102);
+}
+
+.logo .logo_c .logo_in>div {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    padding-top: 7px;
+}
+
+.logo .logo_c .logo_in>div>a {
+    color: rgb(102, 102, 102);
+    margin-left: 8px;
+}
+
+.logo .logo_c .logo_in>div>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.logo .logo_c .logo_in>button {
+    height: 34px;
+    width: 67px;
+    font-size: 14px;
+    color: white;
+    background: rgb(2, 163, 240);
+    position: absolute;
+    right: 0;
+    top: 27px;
+    cursor: pointer;
+}
+
+/* 二维码部分 */
+.logo .logo_c .erCode {
+    width: 90px;
+    height: 100%;
+    margin-left: 80px;
+    position: relative;
+    padding-top: 7px;
+}
+
+.logo .logo_c .erCode>img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo .logo_c .erCode>div {
+    width: 201px;
+    height: 201px;
+    position: absolute;
+    left: -60px;
+    top: 6px;
+    border: 1px solid rgb(220, 220, 220);
+    z-index: 4;
+    display: none;
+}
+
+.logo .logo_c .erCode>div>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo .logo_c .erCode:hover>div {
+    display: block;
+}
+
+/* 购物车部分 */
+.logo .logo_c .buy {
+    width: 218px;
+    height: 44px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 22px;
+    margin-top: 20px;
+    position: relative;
+    font-size: 12px;
+    line-height: 44px;
+    padding-left: 70px;
+}
+
+.logo .logo_c .buy>strong {
+    color: red;
+    margin: 0 2px;
+    font-size: 14px;
+}
+
+.logo .logo_c .buy>span {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.logo .logo_c .buy>span>img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 6px auto;
+}
+
+.logo .logo_c .buy>div.buy_more {
+    width: 300px;
+    position: absolute;
+    right: -2px;
+    top: 40px;
+    border: 2px solid rgb(228, 228, 228);
+    z-index: 10;
+    background: white;
+    display: none;
+}
+
+.logo .logo_c .buy>div.buy_more .buy_list>li {
+    padding: 8px 15px;
+}
+
+.logo .logo_c .buy>div.buy_more .buy_list>li>a {
+    display: block;
+    float: left;
+}
+
+.logo .logo_c .buy>div.buy_more .buy_list>li>a:last-child {
+    width: 205px;
+    line-height: 20px;
+    height: 59px;
+    overflow: hidden;
+    color: rgb(102, 102, 102);
+}
+
+.logo .logo_c .buy>div.buy_more .buy_list>li>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.logo .logo_c .buy>div.buy_more .buy_list>li>a>img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.logo .logo_c .buy:hover {
+    border-bottom-right-radius: 0;
+}
+
+.logo .logo_c .buy>div.buy_more>div {
+    height: 18px;
+    background: rgb(228, 228, 228);
+    font-size: 12px;
+    line-height: 18px;
+    color: blue;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.logo .logo_c .buy:hover>div.buy_more {
+    display: block;
+}
+
+/* 导航区域 */
+.nav {
+    height: 40px;
+    background: linear-gradient(to top, rgb(15, 15, 15), rgb(98, 98, 98));
+}
+
+.nav .nav_c {
+    width: 1200px;
+    min-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+.nav .nav_c .nav_rl {
+    width: 970px;
+    height: 100%;
+    padding: 12px 0 12px 10px;
+}
+
+.nav .nav_c .nav_rl>li {
+    float: left;
+    border-right: 1px solid rgb(86, 86, 86);
+    padding: 0 25px;
+    line-height: 16px;
+}
+
+.nav .nav_c .nav_rl>li:last-child {
+    border-right: none;
+}
+
+.nav .nav_c .nav_rl>li>a {
+    color: white;
+}
+
+.nav .nav_c .nav_rl>li>a.color {
+    color: red;
+}
+
+.nav .nav_c .nav_rl>li>a:hover {
+    color: rgb(42, 208, 216);
+}
+
+.nav .nav_c .nav_rl>li>a.color:hover {
+    color: red;
+}
+
+.nav .nav_c .nav_more {
+    width: 230px;
+    height: 100%;
+    color: white;
+    background: rgb(3, 175, 236);
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+
+.nav .nav_c .nav_more .nav_ul1 {
+    width: 230px;
+    background: rgb(248, 248, 248);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border-left: 1px solid rgb(231, 231, 231);
+    border-right: 1px solid rgb(231, 231, 231);
+    display: none;
+}
+.nav .nav_c .nav_more:hover .nav_ul1{
+    display: block;
+}
+.nav .nav_c .nav_more .nav_ul1>li {
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 13px 0px 6px 20px;
+    position: relative;
+}
+
+.nav .nav_c .nav_more .nav_ul1>li>h3 {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    height: 16px;
+    line-height: 16px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.nav .nav_c .nav_more .nav_ul1>li>h3>span {
+    float: right;
+    color: rgb(38, 185, 254);
+    margin-right: 15px;
+}
+
+.nav .nav_c .nav_more .nav_ul1>li .alist1 {
+    height: 44px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.nav .nav_c .nav_more .nav_ul1>li .alist1>a {
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(102, 102, 102);
+    margin-right: 13px;
+}
+
+.nav .nav_c .nav_more .nav_ul1>li .alist1>a:hover {
+    color: rgb(1, 152, 224);
+}
+
+.nav .nav_c .nav_more .nav_ul1>li .nav_div2 {
+    width: 620px;
+    height: 200px;
+    position: absolute;
+    top: -60px;
+    left: 227px;
+    border: 1px solid rgb(189, 189, 189);
+    border-left: none;
+    display: none;
+    background: white;
+    z-index: 12;
+}
+
+.nav .nav_c .nav_more .nav_ul1>:nth-of-type(1) .nav_div2 {
+    top: 20px;
+}
+
+.nav .nav_c .nav_more .nav_ul1>li:hover {
+    border-left: 2px solid rgb(0, 173, 255);
+    background: white;
+    padding-left: 18px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+.nav .nav_c .nav_more .nav_ul1>li:hover .nav_div2{
+    display: block;
+}
