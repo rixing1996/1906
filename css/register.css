@@ -1,3 +1,96 @@
+/* 中间的验证区域 */
+.content {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 10px auto;
+}
+
+.content .content_c {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgb(198, 230, 243);
+}
+
+.content .content_c>h2 {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.content .content_c>h2>img {
+    display: block;
+    width: 100%;
+}
+
+.content .content_c>div {
+    height: 55px;
+    margin-left: 100px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.content .content_c>div>label {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    line-height: 25px;
+    text-align: right;
+    height: 25px;
+    width: 60px;
+}
+
+.content .content_c>div>input {
+    border: 1px solid rgb(127, 157, 185);
+    height: 25px;
+    width: 200px;
+    padding-left: 5px;
+}
+
+.content .content_c>div>p {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    bottom: 10px;
+    left: 110px;
+    display: none;
+}
+
+.content .content_c .rCode>input {
+    width: 60px;
+}
+
+.content .content_c .rCode>canvas {
+    height: 25px;
+    width: 60px;
+    border: 1px solid rgb(127, 157, 185);
+}
+
+.content .content_c>button {
+    display: block;
+    font-size: 12px;
+    color: white;
+    height: 28px;
+    width: 80px;
+    background: rgb(83, 180, 241);
+    border: 1px solid rgb(12, 121, 189);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.content .content_c>p {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 30px 0 0 150px;
+}
+
+.content .content_c .other {
+    padding: 10px 0 0 50px;
+    margin-bottom: 40px;
+}
+
+.content .content_c .other>img{
+    cursor: pointer;
+}
+
 /* 底部 */
 .foot1 {
     margin-top: 20px;

@@ -190,9 +190,9 @@ $(function () {
                     if (phone_type && pwd1_type && pwd2_type && email_type && code_type) {
                         var select = $(".protocol>input")[0];
                         if (select.checked) {
-                            var cPhone_value = $(".content>div>input").eq(0).val();
-                            var cPwd_value = $(".content>div>input").eq(1).val();
-                            var cEmail_value = $(".content>div>input").eq(3).val();
+                            var cPhone_value = $(".content>div>input").eq(0).val().trim();
+                            var cPwd_value = $(".content>div>input").eq(1).val().trim();
+                            var cEmail_value = $(".content>div>input").eq(3).val().trim();
                             $.ajax({
                                 url: "../api/login.php",
                                 data: {
@@ -201,12 +201,12 @@ $(function () {
                                     "email": cEmail_value
                                 },
                                 success: function (res) {
-                                    if(res){
+                                    if (res) {
                                         alert("登陆成功");
-                                        var afday = afterDate(new Date(),7);
-                                        Cookie.setCookie("phone", cPhone_value,afday);
+                                        var afday = afterDate(new Date(), 7);
+                                        Cookie.setCookie("phone", cPhone_value, afday);
                                         location.href = "../index.html";
-                                    }else{
+                                    } else {
                                         alert("手机号已被注册");
                                     }
                                 }
