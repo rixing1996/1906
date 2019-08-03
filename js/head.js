@@ -77,4 +77,95 @@ $(function () {
         }
     }
     buyList();
+    // 选项卡渲染数据
+    class SelectRender {
+        constructor() {
+            this.ul = $(".nav_ul1");
+            // 获取导航数据
+            var self = this;
+            $.ajax({
+                url: "http://127.0.0.1:1906/test2second/Projects/1906/api/selectRebder.php",
+                dataType: "json",
+                success: function (res) {
+                    // 创建大的li
+                    for (var i = 0; i < res.length; i++) {
+                        var newLi = $("<li>");
+                        newLi.appendTo(self.ul);
+                        self.createA(newLi, res, i);
+                    }
+                    self.clickA();
+                }
+            });
+        }
+        // 创建大li下面的元素
+        createA(li, res, i) {
+            var self = this;
+            li.html(`
+                <h3>
+                    ${res[i].type}
+                    <span>></span>
+                </h3>
+                <div class="alist1">
+                </div>
+                <div class="nav_div2 clearfix">
+                </div>
+            `);
+            var $alist1 = li.children(".alist1");
+            var $nav_div2 = li.children(".nav_div2");
+            var arr = res[i].types;
+            for (var j = 0; j < arr.length; j++) {
+                var newA = $("<a>");
+                newA.appendTo($alist1).attr("href", "javascript:;")
+                    .text(arr[j]);
+            }
+            self.createB($nav_div2, res, i);
+        }
+        // 创建隐藏div下面的元素
+        createB(div, res, i) {
+            var self = this;
+            div.html(`
+                <ul></ul>
+                <div></div>
+            `);
+            var $ul1 = div.children("ul");
+            var arr1 = res[i].list;
+            for (var j = 0; j < arr1.length; j++) {
+                var newLi = $("<li>");
+                newLi.appendTo($ul1).html(`
+                    <span>${arr1[j].title}</span>
+                    <div class="clearfix"></div>
+                `).addClass("clearfix");
+                var adiv = newLi.children("div.clearfix");
+                var arr2 = arr1[j].more;
+                for (var k = 0; k < arr2.length; k++) {
+                    var newA = $("<a>");
+                    newA.appendTo(adiv).attr("href", "javascript:;")
+                        .text(arr2[k]);
+                }
+            }
+            var $div = div.children("div");
+            $div.html(`
+                <h4>推荐品牌</h4>
+                <ul class="clearfix"></ul>
+                <img src="${res[i].url}" alt="">
+            `);
+            var $ul2 = $div.children("ul.clearfix");
+            var arr3 = res[i].brand;
+            for(var j=0;j<arr3.length;j++){
+                var newLi = $("<li>");
+                newLi.appendTo($ul2).html(`
+                    <a href="javascript:;">${arr3[j]}</a>
+                `);
+            }
+        }
+        // 给a标签添加点击事件
+        clickA(){
+            var as = $(".nav_ul1 a");
+            as.click(function(){
+                var typeId = $(this).text();
+                location.href = "http://127.0.0.1:1906/test2second/Projects/1906/html/list.html?"+typeId;
+            }) 
+        }
+    }
+    new SelectRender();
 })
