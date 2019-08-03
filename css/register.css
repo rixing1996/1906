@@ -1,0 +1,29 @@
+/* 底部 */
+.foot1 {
+    margin-top: 20px;
+    border-top: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(225, 225, 225);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(248, 248, 248));
+}
+
+.foot1 .foot1_c {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot1 .foot1_c>img {
+    display: block;
+    width: 100%;
+}
+
+.foot2 .foot2_c {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot2 .foot2_c>img {
+    display: block;
+    width: 100%;
+}
