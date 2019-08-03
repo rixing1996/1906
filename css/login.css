@@ -1,0 +1,156 @@
+#box {
+    width: 100%;
+    background: white;
+}
+
+#content {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    border: 1px solid #C6E6F3;
+    padding: 10px;
+    text-align: left;
+    width: 958px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.content>h2 {
+    width: 600px;
+    margin: 30px auto;
+}
+
+.content>h2>img {
+    width: 100%;
+    display: block;
+}
+
+.content>div {
+    height: 55px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 0 30px 40px;
+    position: relative;
+}
+
+.content>div>label {
+    display: inline-block;
+    width: 70px;
+    line-height: 23px;
+    text-align: right;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    vertical-align: middle;
+}
+
+.content>div>input {
+    border: 1px solid rgb(127, 157, 185);
+    width: 200px;
+    font-size: 12px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.content>div>p {
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.content .cCode>input {
+    width: 60px;
+}
+
+.content .cCode>canvas {
+    width: 60px;
+    height: 25px;
+    border: 1px solid rgb(102, 102, 102);
+}
+
+.content .protocol {
+    width: 300px;
+    margin: o auto;
+    padding-left: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.content .protocol>input {
+    width: 12px;
+    height: 12px;
+    vertical-align: top;
+}
+
+.content .protocol>a:hover {
+    text-decoration: underline;
+    color: rgb(255, 153, 0);
+}
+
+.content>button {
+    font-size: 12px;
+    display: block;
+    width: 85px;
+    height: 30px;
+    border: 1px solid rgb(12, 121, 189);
+    background: rgb(77, 175, 237);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 0 380px;
+    cursor: pointer;
+}
+
+.content>p {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 20px 0 0 280px;
+}
+
+.content>p>a {
+    color: rgb(0, 128, 255);
+}
+
+.content>p>a:hover {
+    text-decoration: underline;
+    color: rgb(255, 153, 0);
+}
+
+.content>h6 {
+    width: 600px;
+    height: 4px;
+    margin: 40px auto;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(238, 238, 237), rgb(255, 255, 255));
+}
+
+.foot1 {
+    margin-top: 20px;
+    border-top: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(225, 225, 225);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(248, 248, 248));
+}
+
+.foot1 .foot1_c {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot1 .foot1_c>img {
+    display: block;
+    width: 100%;
+}
+.foot2 .foot2_c {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot2 .foot2_c>img {
+    display: block;
+    width: 100%;
+}

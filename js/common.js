@@ -490,12 +490,12 @@ class RandomCode {
         var arrLength = arrCode.length;
         for (let i = 0; i < 4; i++) { //控制验证码的位数
             var index = this.randomNum(0, arrLength - 1); //获取随机的索引值
-            var rad = this.randomNum(-5, 5) * Math.PI / 180; //获取随机的弧度
+            var rad = this.randomNum(-3, 3) * Math.PI / 180; //获取随机的弧度
             var txt = arrCode[index]; //获取一个随机值
             this.res.push(txt.toLowerCase());
-            var x = 10 + i * 18; //随机码在canvas上的x坐标
-            var y = 20 + Math.random() * 10; //随机码在canvas上的y坐标
-            this.ctx.font = "25px Arial"; //设置随机码的字体大小和类型
+            var x = 10 + i * 10; //随机码在canvas上的x坐标
+            var y = 10 + Math.random() * 10; //随机码在canvas上的y坐标
+            this.ctx.font = "18px Arial"; //设置随机码的字体大小和类型
             this.ctx.fillStyle = this.randomColor(); //给随机码一个随机颜色
             this.ctx.rotate(rad); //将随机码旋转
             this.ctx.fillText(txt, x, y); //在x，y坐标出画出一个文本，内容为txt
@@ -505,7 +505,7 @@ class RandomCode {
     }
     // 显示线条
     line() {
-        for (let i = 0; i < 4; i++) { //控制线条的数量
+        for (let i = 0; i < 2; i++) { //控制线条的数量
             this.ctx.strokeStyle = this.randomColor(); //线条的颜色
             this.ctx.beginPath(); //开始画线
             //线条的初始位置
@@ -517,7 +517,7 @@ class RandomCode {
     }
     // 显示小点
     point() {
-        for (let i = 0; i < 35; i++) { //控制小点的数量
+        for (let i = 0; i < 20; i++) { //控制小点的数量
             this.ctx.strokeStyle = this.randomColor(); //小点的颜色
             this.ctx.beginPath(); //开始画点
             var x = this.randomNum(0, this.width);
