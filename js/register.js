@@ -99,7 +99,28 @@ $(function () {
                             alert("验证码不正确");
                         }
                     } else {
-                        alert("登录成功");
+                        $.ajax({
+                            url: "../api/register.php",
+                            data: {
+                                "phone": phone_value
+                            },
+                            dataType: "json",
+                            success: function (res) {
+                                if (res.length == 0) {
+                                    alert("您输入的手机号不正确或手机号没注册");
+                                } else {
+                                    if ($.md5(pwd_value) == res[0].pwd) {
+                                        alert("登陆成功");
+                                        var afday = afterDate(new Date(), 7);
+                                        Cookie.setCookie("phone", phone_value, afday);
+                                        location.href = "../index.html";
+                                    } else {
+                                        alert("您输入的密码错误，请重新输入");
+                                        self.ins.eq(1).val("");
+                                    }
+                                }
+                            }
+                        });
                     }
                 })
             }
