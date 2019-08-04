@@ -204,7 +204,7 @@ $(function () {
                                     if (res) {
                                         alert("登陆成功");
                                         var afday = afterDate(new Date(), 7);
-                                        Cookie.setCookie("phone", cPhone_value, afday);
+                                        Cookie.setCookie("phone", cPhone_value, afday,"/");
                                         location.href = "../index.html";
                                     } else {
                                         alert("手机号已被注册");

@@ -112,7 +112,7 @@ $(function () {
                                     if ($.md5(pwd_value) == res[0].pwd) {
                                         alert("登陆成功");
                                         var afday = afterDate(new Date(), 7);
-                                        Cookie.setCookie("phone", phone_value, afday);
+                                        Cookie.setCookie("phone", phone_value, afday,"/");
                                         location.href = "../index.html";
                                     } else {
                                         alert("您输入的密码错误，请重新输入");

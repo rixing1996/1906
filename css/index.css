@@ -1,0 +1,353 @@
+#head .nav .nav_c .nav_more .nav_ul1 {
+    display: block;
+}
+
+.carousel {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel .carousel_c {
+    width: 970px;
+}
+
+.carousel .carousel_c .lunbo {
+    width: 765px;
+    height: 400px;
+}
+
+.carousel .carousel_c .cMore {
+    height: 177px;
+    margin-top: 4px;
+}
+
+.carousel .carousel_c .cMore>a {
+    float: left;
+    width: 300px;
+    height: 100%;
+    margin-left: 23px;
+}
+
+.carousel .carousel_c .cMore>a>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.floor1 {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 15px auto;
+}
+
+.floor1 .floor1_t>li {
+    float: left;
+    width: 240px;
+    text-align: center;
+    border-bottom: 2px solid rgb(208, 208, 208);
+    color: rgb(51, 51, 51);
+    font-weight: 900;
+    cursor: pointer;
+    line-height: 36px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(245, 245, 245));
+    border-right: 1px solid rgb(240, 240, 240);
+}
+
+.floor1 .floor1_t>li.color {
+    border-bottom: 2px solid rgb(0, 148, 255);
+    position: relative;
+}
+
+.floor1 .floor1_t>li.color:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 118px;
+    bottom: 1px;
+    border: 4px solid transparent;
+    border-bottom: 4px solid rgb(0, 148, 255);
+}
+
+.floor1 .floor1_s {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    padding: 20px 0 10px 0;
+}
+
+.floor1 .floor1_s>div {
+    border-right: 1px solid rgb(241, 241, 241);
+    float: left;
+    width: 240px;
+}
+
+.floor1 .floor1_s>div:nth-of-type(2) {
+    width: 480px;
+}
+
+.floor1 .floor1_s>div:last-child {
+    border-right: none;
+}
+
+.floor1 .floor1_s .floor1_s1>a:nth-of-type(1) {
+    display: block;
+    height: 230px;
+}
+
+.floor1 .floor1_s .floor1_s1>a:nth-of-type(1)>img {
+    display: block;
+    width: 230px;
+    height: 230px;
+}
+
+.floor1 .floor1_s .floor1_s1>a:nth-of-type(2) {
+    font-size: 14px;
+    color: rgb(103, 103, 128);
+    margin: 4px 10px 10px 10px;
+}
+
+.floor1 .floor1_s .floor1_s1>p {
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+    margin: 10px 0 30px 0;
+}
+
+.floor1 .floor1_s .floor1_s1>div {
+    font-size: 24px;
+    color: rgb(255, 26, 58);
+    font-weight: 900;
+}
+
+.floor1 .floor1_s .floor1_s1>div>span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t {
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t1 {
+    width: 240px;
+    border-right: 1px solid rgb(241, 241, 241);
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t1>a:nth-of-type(1) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t1>a:nth-of-type(1)>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t1>a:nth-of-type(2) {
+    font-size: 14px;
+    color: rgb(103, 102, 102);
+    margin-left: 10px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t1>div {
+    font-size: 24px;
+    color: rgb(255, 26, 58);
+    font-weight: 900;
+    margin-left: 10px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t1>div>span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t2 {
+    width: 239px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t2>a:nth-of-type(2) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t2>a:nth-of-type(2)>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t2>a:nth-of-type(1) {
+    font-size: 14px;
+    color: rgb(103, 102, 102);
+    margin-left: 10px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t2>div {
+    font-size: 24px;
+    color: rgb(255, 26, 58);
+    font-weight: 900;
+    margin-left: 10px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_t .floor1_s2_t2>div>span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b {
+    padding-top: 10px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b>a {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin: 0 25px 0 18px;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b>a>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b>div>a {
+    font-size: 14px;
+    color: rgb(103, 103, 128);
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b>div>p {
+    font-size: 14px;
+    color: rgb(1, 1, 1);
+    margin: 10px 0 30px 0;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b>div>div {
+    font-size: 24px;
+    color: red;
+    font-weight: 900;
+}
+
+.floor1 .floor1_s .floor1_s2 .floor1_s2_b>div>div>span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.floor1 .floor1_s .floor1_s3>a:nth-of-type(1) {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(103, 102, 102);
+    margin: 0 10px 0 10px;
+}
+
+.floor1 .floor1_s .floor1_s3>p {
+    font-size: 14px;
+    color: rgb(1, 1, 1);
+    margin: 10px 0 30px 10px;
+}
+
+.floor1 .floor1_s .floor1_s3>div {
+    font-size: 24px;
+    color: red;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.floor1 .floor1_s .floor1_s3>div>span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.floor1 .floor1_s .floor1_s3>a:nth-of-type(2) {
+    display: block;
+    height: 230px;
+    margin-top: 20px;
+}
+
+.floor1 .floor1_s .floor1_s3>a:nth-of-type(2)>img {
+    display: block;
+    width: 230px;
+    height: 230px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_t {
+    border-bottom: 1px solid rgb(241, 241, 241);
+    padding-bottom: 10px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_t>a:nth-of-type(1) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 8px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_t>a:nth-of-type(1)>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_t>a:nth-of-type(2) {
+    font-size: 14px;
+    display: inline-block;
+    color: rgb(103, 103, 128);
+    margin-left: 10px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_t>div {
+    font-size: 24px;
+    color: red;
+    font-weight: 900;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_t>div>span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_b>a:nth-of-type(1) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 8px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_b>a:nth-of-type(1)>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_b>a:nth-of-type(2) {
+    font-size: 14px;
+    display: inline-block;
+    color: rgb(103, 103, 128);
+    margin-left: 10px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_b>div {
+    font-size: 24px;
+    color: red;
+    font-weight: 900;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.floor1 .floor1_s .floor1_s4 .floor1_s4_b>div>span {
+    font-size: 12px;
+    font-weight: 300;
+}
