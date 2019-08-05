@@ -116,7 +116,7 @@
             }
             // 退出登录
             $span.children("button").click(function () {
-                Cookie.removeCookie("phone");
+                Cookie.removeCookie("phone", "/");
                 location.href = location.href;
             });
             // 登录注册跳转

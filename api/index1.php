@@ -10,3 +10,4 @@
     } 
 
     mysqli_close($db);
+?>
