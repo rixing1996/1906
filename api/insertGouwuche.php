@@ -10,7 +10,13 @@
     $sql = 'select * from gouwuche where phone="'.$phone.'" and gid="'.$gid.'"';
     $result = mysqli_query($db,$sql);
     $num = mysqli_num_rows($result);
-    echo $num;
+    if($num == 0){
+        $sql1 = 'insert into gouwuche (phone,gid,url,desc1,price1,price2,num) values ("'.$phone.'","'.$gid.'","'.$url.'","'.$desc.'","'.$price1.'","'.$price2.'","1")';
+    } else if($num == 1){
+        $sql1 = 'update gouwuche set num=num+1 where phone="'.$phone.'" and gid="'.$gid.'"';
+    }
+    $back = mysqli_query($db,$sql1);
+    echo $phone.$gid.$url.$desc.$price1.$price2.$num.$back;
     
 
 

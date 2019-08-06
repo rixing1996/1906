@@ -99,6 +99,7 @@ $(function () {
                                 self.page = 0;
                                 self.pageNum = Math.ceil(res.length / 20);
                                 self.render();
+                                self.pageRender();
                             }
                         });
                     }
@@ -162,7 +163,7 @@ $(function () {
                                                 price2: res.price3
                                             },
                                             success: function (res1) {
-                                                console.log(res1);
+                                                buyList();
                                             }
                                         });
                                     }
@@ -171,8 +172,48 @@ $(function () {
                             }
                         })
                     }
+
+                    // =====页码部分=====
+                    pageRender() {
+                        var $page = $(".page");
+                        $page.html("");
+                        if (this.pageNum > 1) {
+                            for (var i = 0; i < this.pageNum; i++) {
+                                var newButton = $("<button>");
+                                if (i == 0) {
+                                    newButton.addClass("color");
+                                }
+                                newButton.appendTo($page).text(`${i+1}`);
+                            }
+                        }
+                        this.clickPage($page);
+                    }
+                    // 点击页码换页换数据
+                    clickPage(page) {
+                        var self = this;
+                        var btns = page.children();
+                        btns.click(function () {
+                            btns.removeClass("color");
+                            $(this).addClass("color");
+                            self.page = $(this).index();
+                            self.render();
+                        })
+                    }
                 }
                 new listRender("../api/list1.php");
+                var btnSorts = $(".sort").children("button");
+                btnSorts.click(function () {
+                    var $index2 = $(this).index();
+                    btnSorts.removeClass("color");
+                    $(this).addClass("color");
+                    if ($index2 == 1) {
+                        new listRender("../api/list1.php");
+                    } else if ($index2 == 2) {
+                        new listRender("../api/list2.php");
+                    } else if ($index2 == 3) {
+                        new listRender("../api/list3.php");
+                    }
+                })
             })
         })
 
