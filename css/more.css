@@ -1,0 +1,265 @@
+.content {
+    width: 980px;
+    min-width: 980px;
+    margin: 10px auto 0;
+}
+
+.content>h2 {
+    font-size: 12px;
+    color: #4e7fc2;
+    border-bottom: 2px solid rgb(120, 181, 244);
+    padding: 8px 0;
+}
+
+.content .important {
+    padding: 12px 0 28px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.content .important .imgs {
+    width: 72px;
+}
+
+.content .important .imgs>li {
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgb(228, 228, 228);
+    margin-bottom: 5px;
+}
+
+.content .important .imgs>li>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content .important .imgs>li.color {
+    border: 1px solid rgb(120, 181, 244);
+}
+
+
+
+.content .important .bigImg {
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
+}
+
+
+
+
+.content .important .detail {
+    width: 503px;
+}
+
+.content .important .detail .desc1 {
+    padding: 10px;
+    color: #333;
+    font-weight: 900;
+    border-bottom: 1px dashed rgb(240, 240, 240);
+}
+
+.content .important .detail .gNumber {
+    font-size: 12px;
+    color: #666;
+    padding: 10px;
+}
+
+.content .important .detail .price {
+    padding: 0px 10px 10px;
+    border-bottom: 1px dashed rgb(240, 240, 240);
+    font-size: 12px;
+    color: rgb(103, 103, 103);
+}
+
+.content .important .detail .price .ownPrice {
+    margin-right: 28px;
+}
+
+.content .important .detail .price .ownPrice>strong {
+    font-size: 16px;
+    color: #d11010;
+    font-weight: 800;
+}
+
+.content .important .detail .price .otherPrice {
+    margin: 6px 30px 0 0;
+}
+
+.content .important .detail .price .count {
+    margin-top: 6px;
+}
+
+.content .important .detail .brand {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 12px 0 0 10px;
+}
+
+.content .important .detail .brand>span {
+    color: rgb(64, 99, 167);
+    cursor: pointer;
+}
+
+.content .important .detail .brand>span:hover {
+    color: rgb(252, 127, 15);
+}
+
+.content .important .detail .type {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 12px 0 0 10px;
+}
+
+.content .important .detail .type>span {
+    color: rgb(64, 99, 167);
+    cursor: pointer;
+}
+
+.content .important .detail .type>span:hover {
+    color: rgb(252, 127, 15);
+}
+
+.content .important .detail .user {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 12px 0 0 10px;
+}
+
+.content .important .detail .user>img {
+    height: 13px;
+    vertical-align: top;
+}
+
+.content .important .detail .user>span {
+    margin-left: 40px;
+    color: rgb(64, 99, 167);
+    cursor: pointer;
+}
+
+.content .important .detail .user>span>strong {
+    color: rgb(252, 127, 15);
+}
+
+.content .important .detail .user>span:hover {
+    color: rgb(252, 127, 15);
+}
+
+.content .important .detail .transport {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 12px 0 0 10px;
+}
+
+.content .important .detail .transport>strong {
+    color: rgb(209, 17, 17);
+}
+
+.content .important .detail .transport>span {
+    color: rgb(65, 100, 167);
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.content .important .detail .transport>span:hover {
+    color: rgb(252, 128, 16);
+}
+
+.content .important .detail .safe {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 12px 0 0 10px;
+}
+
+.content .important .detail .safe>img {
+    height: 15px;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+.content .important .detail .safe>img:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.content .important .detail .server {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin: 12px 0 0 10px;
+}
+
+.content .important .detail .server>strong {
+    color: rgb(64, 99, 167);
+}
+
+.content .important .detail .buy {
+    height: 74px;
+    border: 1px solid rgb(245, 222, 188);
+    background: rgb(255, 252, 243);
+    margin-top: 10px;
+    padding-left: 21px;
+}
+
+.content .important .detail .buy>span {
+    font-size: 12px;
+    display: inline-block;
+    color: rgb(102, 102, 102);
+    margin-top: 28px;
+}
+
+.content .important .detail .buy .jian {
+    width: 13px;
+    height: 13px;
+    background: rgb(252, 254, 250);
+    border: 1px solid rgb(204, 204, 200);
+    color: rgb(45, 49, 48);
+    font-weight: 900;
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: 0px;
+    cursor: pointer;
+}
+
+.content .important .detail .buy>input {
+    width: 32px;
+    height: 22px;
+    border: 1px solid rgb(205, 204, 199);
+    text-align: center;
+}
+
+.content .important .detail .buy .jia {
+    width: 13px;
+    height: 13px;
+    background: rgb(252, 254, 250);
+    border: 1px solid rgb(204, 204, 200);
+    color: rgb(45, 49, 48);
+    font-weight: 900;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 0px;
+    cursor: pointer;
+}
+
+.content .important .detail .buy .jr {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(255, 219, 94), rgb(237, 139, 15));
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.content .important .detail .buy .sc {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(100, 235, 255), rgb(24, 155, 196));
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 25px;
+    cursor: pointer;
+}
