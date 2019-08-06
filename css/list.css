@@ -94,8 +94,8 @@
     white-space: nowrap;
 }
 
-.content .content_l .rank>div>div{
-    color:red;
+.content .content_l .rank>div>div {
+    color: red;
     font-weight: 900;
     text-align: center;
 }
@@ -106,4 +106,134 @@
 
 .content .content_r {
     width: 960px;
+}
+
+.content .content_r .sort {
+    padding: 6px;
+    border-top: 2px solid rgb(22, 173, 224);
+    background: rgb(249, 249, 249);
+}
+
+.content .content_r .sort>span.fl {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.content .content_r .sort>button {
+    height: 26px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    border: 1px solid #cecbce;
+    padding: 0 10px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.content .content_r .sort>button.color {
+    color: white;
+    font-weight: 900;
+    border: 0 none;
+    background: rgb(252, 28, 90);
+}
+
+.content .content_r .sort>span.fr {
+    font-size: 12px;
+    color: rgb(252, 29, 90);
+    margin-top: 4px;
+}
+
+.content .content_r .spRender {
+    margin-top: 10px;
+}
+
+.content .content_r .spRender>li {
+    float: left;
+    width: 25%;
+    padding: 13px;
+}
+
+.content .content_r .spRender>li:hover {
+    background: rgb(244, 244, 244);
+}
+
+.content .content_r .spRender>li>a:nth-of-type(1) {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.content .content_r .spRender>li>a:nth-of-type(1)>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content .content_r .spRender>li>div {
+    height: 36px;
+    overflow: hidden;
+}
+
+.content .content_r .spRender>li>div>a {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+.content .content_r .spRender>li>div>a:hover {
+    text-decoration: underline;
+    color: rgb(255, 26, 58);
+}
+
+.content .content_r .spRender>li>p {
+    color: #ff1a3a;
+    font-weight: 900;
+    font-family: verdana;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.content .content_r .spRender>li>p>span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.content .content_r .spRender>li>button {
+    height: 24px;
+    margin-right: 7px;
+    background: rgb(239, 239, 239);
+    border: 1px solid rgb(223, 223, 223);
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    width: 56px;
+    border-radius: 3px;
+}
+
+.content .content_r .spRender>li>button.btnBuy {
+    border: 0 none;
+    background: rgb(252, 28, 90);
+    color: rgb(255, 255, 255);
+    width: 90px;
+}
+
+.content .content_r .page {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.content .content_r .page>button {
+    width: 29px;
+    height: 26px;
+    border: 1px solid rgb(204, 204, 204);
+    background: white;
+    line-height: 26px;
+    color: #005aa0;
+    font-size: 12px;
+}
+
+.content .content_r .page>button.color {
+    color: white;
+    font-weight: 900;
+    border: 0 none;
+    background: rgb(2, 163, 240);
 }
