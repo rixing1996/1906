@@ -6,10 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gouwuche.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/gouwuche.js"></script>
 </head>
 
 <body>
-
+    <div id="box">
+        <div class="head clearfix">
+            <img src="../images/gouwuchelogo.png" alt="">
+            <ul class="fr clearfix">
+                <li><a href="javascript:;">收藏夹</a></li>
+                <li><a href="javascript:;">新会员注册</a>/<a href="javascript:;">登录</a></li>
+                <li><a href="javascript:;">我的账户</a></li>
+                <li><a href="javascript:;">收藏本站</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 class="clearfix">
+                <span class="xuhao fl">序号</span>
+                <span class="fl name">商品名称</span>
+                <span class="fl otherPrice">一般价</span>
+                <span class="fl ownPrice">No5价</span>
+                <span class="num fl">数量</span>
+                <span class="add fl">付款小计</span>
+                <span class="fl sc">转入收藏夹</span>
+                <span class="fl remove">删除</span>
+            </h2>
+            <ul>
+                <li class="clearfix">
+                    <span class="xuhao fl">1</span>
+                    <a href="javascript:;" class="fl name">Clarins 娇韵诗清透防晒乳/防晒霜SPF40 PA++++(润粉色288185)</a>
+                    <span class="fl otherPrice">420</span>
+                    <span class="fl ownPrice">328</span>
+                    <input type="text" class="num fl" value="3">
+                    <span class="add fl">984</span>
+                    <span class="fl sc">转入收藏夹</span>
+                    <button class="fl remove">删除</button>
+                </li>
+            </ul>
+            <div class="addPrice">
+                应付商品金额：<span>￥2120</span>元
+            </div>
+        </div>
+        <div class="qs clearfix">
+            <a href="../index.html">《=继续购物</a>
+            <a href="javascript:;">清空购物车</a>
+        </div>
+    </div>
 </body>
 
 </html>
