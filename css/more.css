@@ -399,10 +399,130 @@
     width: 765px;
 }
 
-.content .remark .remark_r>img {
+.content .remark .remark_r .comment_t {
+    border-bottom: 2px solid #78b5f4;
+}
+
+.content .remark .remark_r .comment_t>li {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    font-weight: 900;
+    float: left;
+    border: 1px solid rgb(229, 229, 229);
+    border-bottom: none;
+    background: linear-gradient(to bottom, rgb(254, 254, 254), rgb(239, 239, 239));
+}
+
+.content .remark .remark_r .comment_t>li.color {
+    border: 0 none;
+    color: white;
+    background: linear-gradient(to bottom, rgb(1, 225, 244), rgb(0, 127, 179));
+}
+
+.content .remark .remark_r .comment_t>li:hover {
+    color: white;
+    background: linear-gradient(to bottom, rgb(1, 225, 244), rgb(0, 127, 179));
+    border: 0 none;
+}
+
+.content .remark .remark_r>div {
+    margin-top: 10px;
+}
+
+.content .remark .remark_r>div>img {
     display: block;
     width: 100%;
 }
+
+.content .remark .remark_r>div>h2 {
+    font-weight: 900;
+    height: 32px;
+    padding-left: 20px;
+    color: white;
+    background: rgb(120, 181, 244);
+    line-height: 32px;
+}
+
+.content .remark .remark_r>div>ul>li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.content .remark .remark_r>div>ul>li>div.fl {
+    width: 600px;
+}
+
+.content .remark .remark_r>div>ul>li>div.fl>p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.content .remark .remark_r>div>ul>li>div.fl>img {
+    height: 12px;
+}
+
+.content .remark .remark_r>div>ul>li>div.fr {
+    width: 120px;
+}
+
+.content .remark .remark_r>div>ul>li>div.fr>p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.content .remark .remark_r>div>ul>li>div.fr>div {
+    font-size: 12px;
+    color: #acacac;
+    margin-top: 5px;
+}
+
+.content .remark .remark_r>div>div{
+    margin-top:10px;
+    padding-right: 20px;
+}
+
+.content .remark .remark_r>div>div>div>button{
+    height: 20px;
+    width: 30px;
+    background: grey;
+    margin-right: 5px;
+}
+
+.content .remark .remark_r>div>div>div>button.color{
+    background: red;
+    color:white;
+}
+
+.content .remark .remark_r>div>textarea{
+    width: 100%;
+    display: block;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.content .remark .remark_r>div>button{
+    float: right;
+    margin-top: 3px;
+    background: yellowgreen;
+    width: 60px;
+    height: 25px;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 .foot1 {

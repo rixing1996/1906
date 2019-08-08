@@ -212,6 +212,102 @@ $(function () {
                     })
                 }
             });
+            // 评论区域
+            class Comment {
+                constructor() {
+                    this.ele = $(".remark_r>div");
+                    this.getData();
+                }
+                getData() {
+                    var self = this;
+                    $.ajax({
+                        url: "../api/comment1.php",
+                        data: {
+                            gid: gid
+                        },
+                        dataType: "json",
+                        success: function (res) {
+                            self.res = res;
+                            self.page = 0;
+                            self.pageNum = Math.ceil(res.length / 5);
+                            self.render();
+                            self.renderPage();
+                            self.addComment();
+                        }
+                    });
+                }
+                // 评论渲染
+                render() {
+                    var self = this;
+                    this.ele.html("").html(`
+                        <h2>购买评论</h2>
+                        <ul>
+                            
+                        </ul>
+                        <div class="clearfix">
+                            <div class="fr">
+                                
+                            </div>
+                        </div>
+                        <textarea name="" id=""></textarea>
+                        <button>发表评论</button>
+                    `);
+                    this.render2();
+                }
+                render2() {
+                    var self = this;
+                    var resArr = this.res.slice(this.page * 5, this.page * 5 + 5);
+                    var $ul = this.ele.children("ul");
+                    if (resArr.length == 0) {
+                        $ul.html("暂无评论");
+                    } else {
+                        $ul.html("");
+                        for (var i = 0; i < resArr.length; i++) {
+                            var newLi = $("<li>");
+                            newLi.addClass("clearfix").appendTo($ul)
+                                .html(`
+                                    <div class="fl">
+                                        <p>${resArr[i].comment1}</p>
+                                        <img src="../images/wuxing.png" alt="">
+                                    </div>
+                                    <div class="fr">
+                                        <p>用户${resArr[i].phone}</p>
+                                        <div>${resArr[i].time}</div>
+                                    </div>
+                                `)
+                        }
+                    }
+                }
+                // 点击换页部分
+                renderPage() {
+                    var btnDiv = this.ele.find("div.clearfix>div");
+                    if (this.pageNum > 1) {
+                        for (var i = 0; i < this.pageNum; i++) {
+                            var newBtn = $("<button>");
+                            newBtn.appendTo(btnDiv).text(`${i+1}`);
+                            if (i == 0) {
+                                newBtn.addClass("color");
+                            }
+                        }
+                    }
+                    this.pageClick(btnDiv.children("button"));
+                }
+                pageClick(btn){
+                    var self = this;
+                    btn.click(function(){
+                        var $index = $(this).index();
+                        btn.removeClass("color");
+                        $(this).addClass("color");
+                        self.page = $index;
+                        self.render2();
+                    });
+                }
+                // 添加评论部分
+                addComment(){
+                    
+                }
+            }
+            new Comment();
         })
 
     })
