@@ -292,9 +292,9 @@ $(function () {
                     }
                     this.pageClick(btnDiv.children("button"));
                 }
-                pageClick(btn){
+                pageClick(btn) {
                     var self = this;
-                    btn.click(function(){
+                    btn.click(function () {
                         var $index = $(this).index();
                         btn.removeClass("color");
                         $(this).addClass("color");
@@ -303,11 +303,56 @@ $(function () {
                     });
                 }
                 // 添加评论部分
-                addComment(){
-                    
+                addComment() {
+                    var self = this;
+                    var $textarea = this.ele.children("textarea");
+                    var $send = this.ele.children("button");
+                    $send.click(function () {
+                        var cookie = Cookie.getCookie("phone");
+                        if (!cookie) {
+                            location.href = './register.html';
+                        } else {
+                            var value;
+                            if ($textarea.val() == "") {
+                                value = "该用户没有评论";
+                            } else {
+                                value = $textarea.val();
+                            }
+                            $.ajax({
+                                url: "../api/comment2.php",
+                                data: {
+                                    phone: cookie,
+                                    gid: gid,
+                                    comment1: value
+                                },
+                                success: function (res) {
+                                    self.getData();
+                                }
+                            });
+                        }
+                    })
                 }
             }
-            new Comment();
+            $(".remark_r>div").html(`
+                <img src="../images/comment1.png" alt="">
+                <img src="../images/comment2.png" alt="">
+                <img src="../images/comment3.png" alt="">
+            `);
+            var titleLis = $(".comment_t>li");
+            titleLis.click(function () {
+                titleLis.removeClass("color");
+                $(this).addClass("color");
+                var index2 = $(this).index();
+                if (index2 == 0) {
+                    $(".remark_r>div").html("").html(`
+                        <img src="../images/comment1.png" alt="">
+                        <img src="../images/comment2.png" alt="">
+                        <img src="../images/comment3.png" alt="">
+                    `);
+                } else if (index2 == 1) {
+                    new Comment();
+                }
+            })
         })
 
     })
