@@ -127,7 +127,7 @@ $(function () {
                         "background": "rgb(234, 245, 255)",
                         "border": "1px solid rgb(1, 1, 139)"
                     });
-                    $(this).next().show().text("请再次输入密码")
+                    $(this).next().show().text("请输入你的邮箱地址")
                         .css("color", "rgb(82, 82, 82)");
                 }).blur(function () {
                     var email_value = $(this).val().trim();
@@ -158,7 +158,7 @@ $(function () {
                         "background": "rgb(234, 245, 255)",
                         "border": "1px solid rgb(1, 1, 139)"
                     });
-                    $(this).nextAll().eq(1).show().text("请输入有图的验证码")
+                    $(this).nextAll().eq(1).show().text("请输入右图的验证码")
                         .css("color", "rgb(82, 82, 82)");
                 }).blur(function () {
                     var code_value = $(this).val().trim().toLowerCase();
@@ -202,9 +202,9 @@ $(function () {
                                 },
                                 success: function (res) {
                                     if (res) {
-                                        alert("登陆成功");
+                                        alert("注册成功");
                                         var afday = afterDate(new Date(), 7);
-                                        Cookie.setCookie("phone", cPhone_value, afday,"/");
+                                        Cookie.setCookie("phone", cPhone_value, afday, "/");
                                         location.href = "../index.html";
                                     } else {
                                         alert("手机号已被注册");
